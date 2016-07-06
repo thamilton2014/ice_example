@@ -1,0 +1,10 @@
+# Cucumber command line utilities
+---
+
+# Use ERB to inject any command line parameterss
+<%
+  ci_opts = "--format html --out results/html/index.html --format json --out results/json/index.json --format junit --out results/junit/ --verbose --format pretty"
+ %>
+
+# https://www.theice.com
+production: FIG_NEWTON_FILE=production.yml --no-source --color <%= ci_opts %>
