@@ -14,7 +14,7 @@ pending
 
 Using this locally on Mac
 
-``ruby
+```ruby
 # Run all tests
 cucumber -p production features/
 
